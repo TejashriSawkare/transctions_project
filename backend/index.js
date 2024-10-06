@@ -13,7 +13,7 @@ const port = 5000;
 app.use(express.json());
 
 mongoose.connect('mongodb://localhost:27017/productsDB', {})
-.then(() => console.log('MongoDB connected...'))
+.then(() => console.log('MongoDB is connected...'))
 .catch(err => console.log('MongoDB connection error:', err));
 
 const productRouter = require('./routes/productRoutes');
